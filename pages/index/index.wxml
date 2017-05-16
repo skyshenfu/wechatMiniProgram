@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<view class="container">
+  <view bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    <button style="width:600rpx;margin-top:50rpx" type="primary" bindtap="linstenButton">点击显示</button>
+    <button style="width:600rpx;margin-top:50rpx" type="primary" bindtap="nav">点击导航</button>
+    <button style="width:600rpx;margin-top:50rpx" type="primary" bindtap="navbar">点击导航条</button>
+    <button style="width:600rpx;margin-top:50rpx" type="primary" bindtap="toast">点击吐司</button>
+    <loading hidden="{{isVisiable}}">加载中</loading>
+    <view class="animationgLoading">
+        <image src="/images/afk.gif" style="width:300rpx;height:300rpx"></image>
+        <text class="textLoading">正在刷新</text>
+    </view>
+  </view>
+</view>

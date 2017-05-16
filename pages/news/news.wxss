@@ -1,0 +1,19 @@
+.newstype-list {
+  display: flex;
+  flex-direction: column;
+}
+.newstype-item {
+  display: flex;
+  flex-direction: row;
+  margin: 10rpx;
+  justify-content: flex-start;
+}
+.newsstype-textall{
+  display: flex;
+  flex-direction: column;
+}
+.newsbotoom{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

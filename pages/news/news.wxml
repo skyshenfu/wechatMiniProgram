@@ -1,0 +1,26 @@
+<view class="newstype-list" style="background:">
+<swiper indicator-dots="true" indicator-active-color="#f96060"  indicator-color="#77ffffff" autoplay="true" style="width:750rpx">
+<swiper-item>
+<image src="https://img3.doubanio.com/lpic/s27264181.jpg" mode="widthFix" style="width:750rpx"/>
+</swiper-item>
+<swiper-item>
+<image src="https://img3.doubanio.com/lpic/s4610502.jpg" mode="widthFix" style="width:750rpx"/>
+</swiper-item>
+<swiper-item>
+<image src="https://img1.doubanio.com/lpic/s4435059.jpg" mode="widthFix" style="width:750rpx"/>
+</swiper-item>
+</swiper>
+<block wx:for="{{booksdata}}" wx:for-item="book" wx:key="*this">
+<view class="newstype-item">
+    <view>
+        <image style="width: 300rpx; height: 300rpx; background-color: #eeeeee;" mode="center" src="{{book.image}}"></image>
+    </view>
+    <view class="newstype-textall" style="margin-left:20rpx">
+        <text>{{book.title}}</text>
+        <view>
+            <text style="font-size:10px">{{book.summary}}</text>
+        </view>
+    </view>
+</view>
+</block>
+</view>

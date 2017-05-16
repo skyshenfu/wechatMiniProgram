@@ -1,0 +1,17 @@
+<scroll-view scroll-y="true" style="height:{{scrollHeight}}px"  bindscroll="scroll"
+bindscrolltolower="onBottomEvent" scroll-top="{{scrolltop}}" bindscrolltoupper="onPullDown" upper-threshold="10">
+<view style="background:#009900;width:750rpx;height:100px"></view>
+<view class="newstype-list">
+  <block wx:for="{{items}}" wx:for-item="item" wx:key="*this">
+    <view class="newstype-item">
+      <view>
+        <text>{{item}}</text>
+      </view>
+    </view>
+  </block>
+</view>
+</scroll-view>
+<view class="weui-loadmore">
+  <view class="weui-loading" hidden="{{bottomInVisiable}}"></view>
+  <view class="weui-loadmore__tips" hidden="{{bottomInVisiable}}">正在加载</view>
+</view>

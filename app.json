@@ -1,0 +1,48 @@
+{
+  "pages":[
+    "pages/pullscroll/pullscroll",        
+    "pages/news/news",
+    "pages/index/index",
+    "pages/pull/pull",
+    "pages/dialog/dialog",
+    "pages/navbar/navbar"
+  ],
+  "window":{
+    "backgroundTextStyle":"white",
+    "navigationBarBackgroundColor": "#f96060",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"green"
+  },
+  "tabBar": {
+      "color": "#333333",
+      "selectedColor":"#f96060",
+      "position":"bottom",
+    "list": [
+      {
+        "pagePath": "pages/pullscroll/pullscroll",
+        "iconPath": "images/like_normal.png",
+        "selectedIconPath": "images/like_checked.png",
+        "text": "自定义"
+      },
+    {
+      "pagePath": "pages/news/news",
+      "iconPath":"images/information_normal.png",
+      "selectedIconPath":"images/information_checked.png",
+      "text": "书单"
+    },
+    {
+      "pagePath": "pages/index/index",
+      "iconPath":"images/home_normal.png",
+      "selectedIconPath":"images/home_checked.png",
+      "text": "主页"
+    },
+    {
+      "pagePath": "pages/pull/pull",
+      "iconPath":"images/discover_normal.png",
+      "selectedIconPath":"images/discover_checked.png",
+      "text": "下拉"
+    }
+    
+    ]
+  }
+}

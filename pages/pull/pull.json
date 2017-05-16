@@ -1,0 +1,6 @@
+{
+    "enablePullDownRefresh":true,
+     "navigationBarTitleText": "下拉刷新",
+      "backgroundColor": "#fff",
+      "backgroundTextStyle": "dark"
+}
